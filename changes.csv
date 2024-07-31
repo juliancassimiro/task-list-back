@@ -1,0 +1,12 @@
+task,INSERT,NULL,{"id": 4, "title": "Teste de teste", "description": "Teste", "status": 0, "priority": 1},Wed Jul 31 14:24:56 BRT 2024
+task,INSERT,NULL,{"id": 5, "title": "Teste do arquivo de modificação", "description": "Realiza o teste do arquivo de modificação", "status": 1, "priority": 3},Wed Jul 31 14:24:56 BRT 2024
+task,UPDATE,{"id": 3, "title": "Prova", "description": "Prova de português com os conteúdos do bimestre", "status": 0, "priority": 1},{"id": 3, "title": "Prova ABCD", "description": "Prova sem nada", "status": 1, "priority": 0},Wed Jul 31 14:24:56 BRT 2024
+task,DELETE,{"id": 1, "title": "Prova", "description": "Prova de matemática com os conteúdos do semestre", "status": 0, "priority": 3},NULL,Wed Jul 31 14:37:52 BRT 2024
+task,DELETE,{"id": 2, "title": "Prova", "description": "Prova de matemática com os conteúdos do semestre", "status": 0, "priority": 3},NULL,Wed Jul 31 17:47:56 BRT 2024
+task,DELETE,{"id": 3, "title": "Prova ABCD", "description": "Prova sem nada", "status": 1, "priority": 0},NULL,Wed Jul 31 17:47:56 BRT 2024
+task,DELETE,{"id": 4, "title": "Teste de teste", "description": "Teste", "status": 0, "priority": 1},NULL,Wed Jul 31 17:47:56 BRT 2024
+task,DELETE,{"id": 5, "title": "Teste do arquivo de modificação", "description": "Realiza o teste do arquivo de modificação", "status": 1, "priority": 3},NULL,Wed Jul 31 17:47:56 BRT 2024
+task,INSERT,NULL,{"id": 6, "title": "Teste 1", "description": "Teste 1", "status": 0, "priority": 0},Wed Jul 31 17:51:14 BRT 2024
+task,UPDATE,{"id": 6, "title": "Teste 1", "description": "Teste 1", "status": 0, "priority": 0},{"id": 6, "title": "Teste 1", "description": "Teste 1", "status": 0, "priority": 1},Wed Jul 31 17:51:14 BRT 2024
+task,INSERT,NULL,{"id": 7, "title": "1818", "description": "31/07/2024", "status": 0, "priority": 0},Wed Jul 31 18:19:56 BRT 2024
+task,INSERT,NULL,{"id": 8, "title": "1819", "description": "3107", "status": 0, "priority": 0},Wed Jul 31 18:19:56 BRT 2024
