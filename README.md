@@ -3,7 +3,7 @@
 ```SQL
 CREATE  TABLE `changes_log` (
 
-`id`  int(11) NOT NULL,
+`id`  int(11) NOT NULL PRIMARY KEY auto_increment,
 
 `table_name`  varchar(255) DEFAULT  NULL,
 
