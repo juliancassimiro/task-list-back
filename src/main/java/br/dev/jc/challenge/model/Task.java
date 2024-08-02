@@ -2,10 +2,10 @@ package br.dev.jc.challenge.model;
 
 import br.dev.jc.challenge.enums.Priority;
 import br.dev.jc.challenge.enums.Status;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
 
 @Entity
 public class Task {
@@ -13,9 +13,19 @@ public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    @NotBlank(message = "Título é obrigatório")
     private String title;
+
+    @NotBlank(message = "Descrição é obrigatória")
     private String description;
+
+    @NotNull(message = "Prioridade é obrigatória")
+    @Enumerated(EnumType.STRING)
     private Priority priority;
+
+    @NotNull(message = "Status é obrigatório")
+    @Enumerated(EnumType.STRING)
     private Status status;
 
 
@@ -59,8 +69,8 @@ public class Task {
         this.status = status;
     }
 
-    @Override
     public String toString() {
-        return STR."Tarefa Id=[\{id}], Titulo=\{title}, Descrição=\{description}, Prioridade=\{priority}";
+        return String.format("Tarefa Id=[%d], Titulo=%s, Descrição=%s, Prioridade=%s, Status=%s",
+                id, title, description, priority, status);
     }
 }
